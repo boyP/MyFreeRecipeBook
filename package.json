@@ -20,7 +20,6 @@
     "react-dom": "^15.5.4",
     "react-draggable-list": "^3.3.0",
     "react-edit-inline": "^1.0.8",
-    "react-image-crop": "^2.0.5",
     "react-materialize": "^0.18.4",
     "react-mounter": "^1.2.0",
     "react-tooltip": "^3.3.0",

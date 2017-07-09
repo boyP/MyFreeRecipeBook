@@ -1,12 +1,6 @@
 import React from 'react';
 import TrackerReact from 'meteor/ultimatejs:tracker-react';
 
-// Accounts.onResetPasswordLink(function(token, done) {
-//   Session.set('passwordToken', token);
-//   done();
-//   FlowRouter.go('reset-password', { token: token });
-// });
-
 $.cloudinary.config = {
   cloud_name: Meteor.settings.CLOUDINARY_CLOUD_NAME
 };
