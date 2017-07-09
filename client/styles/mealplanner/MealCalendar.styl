@@ -1,0 +1,83 @@
+
+subtitle-color = #BDBDBD
+
+mealDiv(color)
+  min-height: 100px;
+  background: color
+
+mealLabel(color)
+  margin: 0px
+  color: color
+
+.meal-calendar-container
+  text-transform: capitalize
+
+div.days-container
+  text-align: center
+  border-bottom-style: solid
+  border-bottom-width: 2px
+  border-bottom-color: subtitle-color
+  padding: 5px 0px
+  margin-top: 5px
+  font-weight: 300
+
+.meal-calendar-container > .row > .col.s2
+  width: 14%
+
+p.breakfast
+  mealLabel #4CAF50
+
+p.lunch
+  mealLabel #FF5722
+
+p.dinner
+  mealLabel #DD2C00
+
+div.breakfast
+  mealDiv #DCEDC8
+
+div.lunch
+  mealDiv #FFF9C4
+
+div.dinner
+  mealDiv #FFCCBC
+
+.over
+  background: blue
+  opacity: 0.5
+  min-height: 100px;
+
+// Calendar Item
+.drag
+  opacity: 0.5
+
+.selected
+  background: #E0E0E0 !important
+
+.calendar-item-container:hover
+   box-shadow: 0 0 10px 2px rgba(0, 140, 186, 0.5)
+
+.calendar-item-container
+  background-color: white
+  border-radius: 4px
+  margin: 5px 0px
+  padding: 5px
+  box-shadow: 0 0 2px 1px
+
+.calendar-checkbox-iconCompleted
+  margin: 5px
+  color: green
+
+.calendar-checkbox-icon
+  margin: 5px
+
+.calendar-checkbox-icon:hover
+  margin: 5px
+  color: black
+
+.calendar-checkbox
+  display: inline-block
+
+.calendar-item-container > div.calendar-item-title
+  display: inline-block
+  font-size: small

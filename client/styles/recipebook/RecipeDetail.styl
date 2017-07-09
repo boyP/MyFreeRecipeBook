@@ -1,0 +1,124 @@
+@import 'jeet'
+
+iconActiveColor = #424242
+imageBorderRadius = 10px
+
+setPadding(topBottom, leftRight)
+  padding: topBottom leftRight
+
+setParagraphColor()
+  color: #BDBDBD
+
+setRecipeSection()
+  margin-bottom: 0px
+  padding: 10px 0px
+
+setIconMargins()
+  margin-right: 10px
+
+.container
+  setPadding(30px, 0px)
+
+.recipe-title
+  font-size: xx-large
+  color: black
+
+.section-header
+  setRecipeSection()
+
+.section-title
+  margin: 0px
+  font-size: x-large
+  setParagraphColor()
+
+.info-heading
+  font-size: small
+  setParagraphColor()
+
+span.icon
+  setParagraphColor()
+  cursor: pointer
+
+.iconText
+  setIconMargins()
+  cursor: pointer
+
+.iconText:hover
+  color: iconActiveColor
+
+// Ingredients
+.list-item
+  margin: 5px 0px
+
+.list-item > p:first-letter
+  text-transform: capitalize
+
+// Directions
+h3.section-item
+  setParagraphColor()
+  font-size: large
+  margin: 0px
+
+ol
+  list-style-type: none
+  setParagraphColor()
+
+ol li
+  position: relative
+  margin-bottom: 20px
+
+li p
+  padding-left: 30px
+  color: #555
+
+li.completed > p
+    color: green !important
+
+li.completed > span
+  color: green !important
+
+.list-number
+  position: absolute
+
+
+// Upload Image
+input.upload-image
+  display: none
+
+.recipe-image-wrapper
+    max-width: 50%
+    height: auto
+    position: relative
+
+.recipe-image
+    width: 100%
+    height: auto
+    border-radius: imageBorderRadius
+
+span.upload-icon
+  position: absolute
+  bottom: 10px
+  right: 10px
+  color: tan
+
+label
+  font-size: inherit
+  color: inherit
+
+.preview-image
+    max-width: 350px;
+    max-height: 250px;
+    border-radius: imageBorderRadius
+
+.preview-image-placeholder
+  width: 350px;
+  height: 250px;
+  border: 2px dotted red;
+  border-radius: 5px;
+
+.fa-trash
+  color: red
+
+.trash-icon
+  float: right
+  margin-right: 10px
