@@ -7,7 +7,12 @@ function isEmailValid(address) {
 
 function createUser(email, password) {
   if (!isEmailValid(email)) {
-    console.log('invalid email');
+    Bert.alert(
+      'Invalid Email. Please try again!',
+      'danger',
+      'growl-top-right',
+      'fa-remove'
+    );
     return;
   }
   Accounts.createUser(
@@ -38,7 +43,7 @@ const Registration = props => {
       <div className="row">
         <div className="col-md-6 col-md-offset-3">
           <h1 className="login-title">Create a new account (It's free!)</h1>
-          <LoginForm submitBtnLabel="Register" submitAction={this.createUser} />
+          <LoginForm submitBtnLabel="Register" submitAction={createUser} />
           <p>{loginMsg} <a href="/login">Sign In</a></p>
         </div>
       </div>

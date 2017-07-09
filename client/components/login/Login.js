@@ -31,7 +31,7 @@ const Login = props => {
           <h1 className="login-title">Login to your account</h1>
           <LoginForm submitBtnLabel="Login" submitAction={loginWithPassword} />
           <p>{registerMsg} <a href="/register">Register</a></p>
-          <p><a href="/forgot-password">{forgotMsg}</a></p>
+          {/* <p><a href="/forgot-password">{forgotMsg}</a></p> */}
         </div>
       </div>
     </div>
